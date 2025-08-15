@@ -37,6 +37,9 @@ function Pokemon(){
        useEffect(() => {
             pokemonData();
         }, []);
+        useEffect(()=>{
+          document.title="Pokemon cards";
+        })
 
     const searchData = pokemon.filter((curPokemon) =>
     curPokemon.name.toLowerCase().includes(search.toLowerCase())
